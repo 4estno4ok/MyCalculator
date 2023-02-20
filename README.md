@@ -17,7 +17,12 @@ Find sin and cos and tan to do mathematical operations with them.
 
 Also find the number (a) PI and do mathematical operations with them.
 
-Русская версия
+
+
+ 
+ 
+ 
+ РУССКАЯ ВЕРСИЯ!!!!!!!
 
 Добрый день пользователям которые читают мой репозиторий. Это программа для меня первая серьёзная работа.  
 
