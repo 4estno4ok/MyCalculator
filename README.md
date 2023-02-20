@@ -1,21 +1,21 @@
 #MyCalculator
 
-Good afternoon to the users who read my repository. This program is my first serious job.  
+Good afternoon to users who read my repository. This program is my first serious job.
 
  -IF you need a version in Russian, then scroll below
 
+
 In short, why I decided to create a console calculator, and not another application. In general, I am not familiar with github, so I would like to study this platform and C++ in more detail, too.
 
-In this program you will be able to:
-Add, subtract, multiply, divide.  integer, fractional, floating point.
+In this program you will be able to: Add, subtract, multiply, divide. integer, fractional, floating-point numbers.
 
-Raise a number to a power and do mathematical operations like calculation and multiplication. 
+Raise a number to a power and do mathematical operations like calculation and multiplication.
 
 Get the roots of one or two numbers, as well as add and other mathematical operations.
 
-Find sin and cos and tan to do mathematical operations with them.
+Find sin and cos and tan and calculate.
 
-Also find the number (a) PI and do mathematical operations with them.
+Also find the number (a) PI and do calculations with them.
 
 
 
