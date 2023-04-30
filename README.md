@@ -13,7 +13,9 @@ Get the roots of one or two numbers, as well as add and other mathematical opera
 Find sin and cos and tan and calculate.
 Calculation with irrational numbers such as e and pi.
 
-Computation with algebraic module.
+Computation with math module.
+
+If desired, you can add a module to calculate the logarithm.
 
 
 
@@ -24,7 +26,7 @@ Computation with algebraic module.
 
 Добрый день пользователям которые читают мой репозиторий. Это программа для меня первая серьёзная работа.  
 
-Вкратце почему я решил создать именно консольный калькулятор, а не другое приложение. Вообще я плохо знаком с github, поэтому я хотел бы поподробнее изучить эту платформу и С++ тоже.
+Вкратце почему я решил создать именно консольный калькулятор, а не другое приложение. Вообще я плохо знаком с github, поэтому я хотел бы по подробнее изучить эту платформу и С++ тоже.
 
 В этой программе вы сможете:
 Складывать, вычитать, умножать, делить.  целочисленные,дробные,с плавающей точкой числа.
@@ -37,3 +39,5 @@ Computation with algebraic module.
 Вычисление с иррациональными числами таким как е и пи.
 
 Вычисление с алгебраическими модулями.
+
+При желании вы можете добавить модуль для вычисление логорифма
