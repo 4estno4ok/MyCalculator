@@ -4,10 +4,8 @@ using namespace std;
 
 void fhelper(char synb); //guide base calculator
 
-void finteger(int fnum, int snum, char symb); //calculation with integer numbers
-void fdoubler(double fnum, double snum, char symb); //calculation with double numbers
-void ffloater(float fnum, float snum, char symb); //calculation with float point numbers
-
+void finteger(int fnum, int snum, char symb); //integer calculation
+//template <class T> void fCalc(T fnum, T snum, char symb); //calculation double or float
 
 void fCalcDeg(double fnum, double snum, char symb); //degree root numbers
 void fCalcDegPro(double fnum, double snum, double x, double y, char symb); //degree with, set number by default user 
@@ -17,112 +15,13 @@ void fCalcRootTwo(double fnum, double snum, char symb); //root calculation
 void fRoot(double fnum); //just root numbers math operations
 
 
-void finteger(int fnum, int snum, char symb) //calculation integer
-{
-	int result;
-	char symbol = '%';
-
-	switch(symb){
-
-	case '+':
-	result = fnum + snum;
-		printf("Calc> %d + %d = %d\n", fnum, snum, result);
-		break;
-
-	case '-':
-	result = fnum - snum;
-		printf("Calc> %d - %d = %d\n", fnum, snum, result);
-		break;
-
-	case '/':
-	result = fnum / snum;
-		printf("Calc> %d / %d = %d\n", fnum, snum, result);
-		break;
-
-	case '%':
-	result = fnum % snum;
-		printf("Calc> %d %c %d = %d\n", fnum, symbol, snum, result);
-		break;
-
-	case '*':
-	result = fnum * snum;
-		printf("Calc> %d * %d = %d\n", fnum, snum, result);
-		break;
-	}
-}
-
-void fdoubler(double fnum, double snum, char symb) //calculation double;
-{
-	double result;
-
-	switch(symb){
-	
-	case '+':
-	result = fnum + snum;
-		printf("Calc> %f + %f = %f\n", fnum, snum, result);
-		break;
-
-	case '-':
-	result = fnum - snum;
-		printf("Calc> %f - %f = %f\n", fnum, snum, result);
-		break;
-
-	case '/':
-	result = fnum / snum;
-		printf("Calc> %f * %f = %f\n", fnum, snum, result);
-		break;
-
-	case '%':
-		cout<<"Calc> Oopes... invalid syntax\n";
-		break;
-
-	case '*':
-	result = fnum * snum;
-		printf("Calc> %f * %f = %f\n", fnum, snum, result);
-		break;
-	}
-}
-
-void ffloater(float fnum, float snum, char symb) //calculation float;
-{
-	float result;
-
-	switch(symb){
-	
-	case '+':
-	result = fnum + snum;
-		printf("Calc> %f + %f = %f\n", fnum, snum, result);
-		break;
-
-	case '-':
-	result = fnum - snum;
-		printf("Calc> %f - %f = %f\n", fnum, snum, result);
-		break;
-
-	case '/':
-	result = fnum / snum;
-		printf("Calc> %f / %f = %f\n", fnum, snum, result);
-		break;
-
-	case '%':
-		printf("%s\n", "Calc> Oopys... invalid syntax");
-		break;
-
-	case '*':
-	result = fnum * snum;
-		printf("Calc> %f * %f = %f\n", fnum, snum, result);
-		break;
-	}
-}
-
-
 void fhelper(char synb) //guide base calculator;
 {
 	switch(synb){
 	case '2':
 		cout<<"\nCalc>\tThis module is for calculating integer numbers, a hotkey(2)\n\t";
-		cout<<"This module is for calculating fractional numbers, a hotkey(3)\n\t";
-		cout<<"it`s module for type float calculation, hot key (4)\n";
+		cout<<"This module for calculation double numbers, a hotkey(3)\n\t";
+		cout<<"This module for calculation float numbers, hot key (4)\n";
 		break;
 
 	case '3':
@@ -140,7 +39,68 @@ void fhelper(char synb) //guide base calculator;
 		cout<<"This module is required for, calculation of the number PI, hotkey(10)\n";
 		break;
 	case '6':
-		cout<<"\nCalc>\tThis module for calculation number pi\nPrototype: pi + pi\nYou enter symbol for choose action(+,-,*,/), hotkey(11)\n";
+		cout<<"\nCalc>\tThis module for calculation number pi or e\nPrototype: pi + pi or e - e\nYou enter symbol for choose action(+,-,*,/), hotkey(11)\n";
+		break;
+	}
+}
+
+void finteger(int fnum, int snum, char symb)
+{
+	int result;
+
+	switch(symb){
+	
+	case '+':
+	result = fnum + snum;
+		printf("Calc> %d + %d = %d\n", fnum, snum, result);
+		break;
+
+	case '-':
+	result = fnum - snum;
+		printf("Calc> %d - %d = %d\n", fnum, snum, result);
+		break;
+
+	case '*':
+	result = fnum * snum;
+		printf("Calc> %d * %d = %d\n", fnum, snum, result);
+		break;
+
+	case '/':
+	result = fnum / snum;
+		printf("Calc> %d / %d = %d\n", fnum, snum, result);
+		break;
+
+	case '%':
+		result = fnum % snum;
+		printf("Calc> %d %% %d = %d\n", fnum, snum, result);
+		break;
+	}
+}
+
+template <class T> void fCalc(T fnum, T snum, char symb) //double or float calculation
+{
+	T result;
+
+	switch(symb){
+
+	case '+':
+	result = fnum + snum;
+		printf("Calc> %f + %f = %f\n", fnum, snum, result);
+		break;
+
+	case '-':
+	result = fnum - snum;
+		printf("Calc> %f - %f = %f\n", fnum, snum, result);
+		break;
+
+	case '*':
+	result = fnum * snum;
+		printf("Calc> %f * %f= %f\n", fnum, snum, result);
+		break;
+
+	case '/':
+	result = fnum / snum;
+		printf("Calc> %f / %f = %f\n", fnum, snum, result);
 		break;
 	}
 }
@@ -165,14 +125,14 @@ void fCalcDeg(double fnum, double snum, char symb)
 		printf("Calc> %f - %f = %f\n", res1, res2, result);
 		break;
 
-	case '/':
-	result = res1 / res2;
-		printf("Calc> %f / %f = %f\n", res1, res2, result);
-		break;
-
 	case '*':
 	result = res1 * res2;
 		printf("Calc> %f * %f = %f\n", res1, res2, result);
+		break;
+
+	case '/':
+	result = res1 / res2;
+		printf("Calc> %f / %f = %f\n", res1, res2, result);
 		break;
 
 	case '!':
