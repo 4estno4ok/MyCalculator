@@ -1,3 +1,5 @@
+//Add log(b)^a
+
 #include <iostream>
 #include <cmath>
 using namespace std;

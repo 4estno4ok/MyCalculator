@@ -46,7 +46,7 @@ int main()
 	if(conh == 66) {cout<<"Successful exit from the program 'Calculator'\n\n"; return 0;}
 	if(conh == 77) goto label;
 
-	if(conh == 2) //integer  calculation;
+	if(conh == 2) //integer  calculation
 	{
 		cout<<"\nCalc> This module for calculation ineteger numbers\n";
 		cout<<"Prototype: fnum - snum integers\n\n";
@@ -56,17 +56,17 @@ int main()
 		finteger(numi1,numi2,sym);
 	}
 
-	if(conh == 3) //double calculation;
+	if(conh == 3) //double calculation
 	{
 		cout<<"\nCalc> This module for calculating fractional numbers\n";
 		cout<<"Prototype: 23.5 - 13.5 = 10\n\n";
 		
 		cout<<"Enter first number and symbol(+,-,*,/) and yet second number\n\nCalc: ";
 			cin>>numd1>>sym>>numd2;
-		fdoubler(numd1, numd2, sym);
+		fCalcNumbers(numd1, numd2, sym);
 	}
 
-	if(conh == 4) //float calculation;
+	if(conh == 4) //float calculation
 	{
 		cout<<"\nCalc> This module for calculation floating point numbers\n";
 		cout<<"Prototype: fnum / snum, but forbidden % because on zero division forbidden\n\n";
@@ -74,7 +74,7 @@ int main()
 		cout<<"Enter first number and symbol(+,-,*,/) and yet second number\n\nCalc: ";
 			cin>>numf1>>sym>>numf2;
 
-		ffloater(numf1, numf2, sym);
+		fCalcNumbers(numf1, numf2, sym);
 	}
 
 	if(conh == 5) //calculating squared numbers
